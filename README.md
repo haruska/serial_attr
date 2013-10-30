@@ -24,11 +24,11 @@ Or install it yourself as:
 Usage
 -----------------------------
 
-To use on any ruby object, just include `SerialAttr::Object`. It will then provide you with some helper methods to
+To use on any ruby object, just include `SerialAttr::Model`. It will then provide you with some helper methods to
 create a list of attribute names to serialize.
 
     class MyObj
-      include SerialAttr::Object
+      include SerialAttr::Model
 
       serial_attr :name, :address, :phone_number
       skip_serial_attr :scratch_pad
